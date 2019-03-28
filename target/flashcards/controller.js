@@ -11,7 +11,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 Object.defineProperty(exports, "__esModule", { value: true });
 const routing_controllers_1 = require("routing-controllers");
 const entity_1 = require("./entity");
-let TicketController = class TicketController {
+let FlashcardController = class FlashcardController {
     async allFlashcards() {
         const flashcard = await entity_1.default.find();
         return { flashcard };
@@ -22,9 +22,9 @@ __decorate([
     __metadata("design:type", Function),
     __metadata("design:paramtypes", []),
     __metadata("design:returntype", Promise)
-], TicketController.prototype, "allFlashcards", null);
-TicketController = __decorate([
+], FlashcardController.prototype, "allFlashcards", null);
+FlashcardController = __decorate([
     routing_controllers_1.JsonController()
-], TicketController);
-exports.default = TicketController;
+], FlashcardController);
+exports.default = FlashcardController;
 //# sourceMappingURL=controller.js.map

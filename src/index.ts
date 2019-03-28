@@ -1,13 +1,14 @@
 import 'reflect-metadata'
 import {createKoaServer} from 'routing-controllers'
 import setupDb from './db'
+import FlashcardController from './flashcards/controller'
 
 
 
 const app = createKoaServer({
   cors: true,
   controllers: [
-
+    FlashcardController
   ],
   // authorizationChecker: async (action: Action, roles: string[]) => {
   //   const header: string = action.request.headers.authorization;

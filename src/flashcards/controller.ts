@@ -2,7 +2,7 @@ import { JsonController, Get} from 'routing-controllers'
 import Flashcard from './entity'
 
 @JsonController()
-export default class TicketController {
+export default class FlashcardController {
 
 
     @Get('/flashcards')
