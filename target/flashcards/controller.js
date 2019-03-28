@@ -13,8 +13,8 @@ const routing_controllers_1 = require("routing-controllers");
 const entity_1 = require("./entity");
 let FlashcardController = class FlashcardController {
     async allFlashcards() {
-        const flashcard = await entity_1.default.find();
-        return { flashcard };
+        const flashcards = await entity_1.default.find();
+        return { flashcards };
     }
 };
 __decorate([
